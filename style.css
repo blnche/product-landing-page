@@ -1,0 +1,190 @@
+/* GENERAL */
+body{
+    margin: 0;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    color: #0A0326;
+}
+.section{
+    margin: 1rem;
+    padding: 2rem;
+}
+.text{
+    font-size: 1em;
+    padding: 1rem;
+    text-align: justify;
+}
+.sub-title{
+    font-size: 2em;
+}
+
+/* HEADER */
+#header{
+    display: flex;
+    background-color: #b3dcfc;
+    margin: 0;
+    align-items: center;
+    color: #2C2873;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: fit-content;
+}
+#header h1{
+    font-size: 2.5em;
+    flex: 1 1 35%;
+    margin: 2rem;
+    min-width: fit-content;
+}
+.logo{
+    flex: 1 1 20%;
+    padding: 1rem;
+    text-align: center;
+}
+#nav-bar{
+    flex: 1 1 45%;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 0;
+}
+li{
+   padding: 1rem;
+   font-size: 1.25em;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #231756;
+}
+a:active{
+    color: #A773B0;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+/* ABOUS US SECTION */
+#about-us{
+    display: flex;
+    align-items: center;
+}
+#about-us p{
+    text-align: center;
+    padding: 3rem;
+    text-indent: 2rem;
+}
+
+/* PRODUCT SECTION */
+#products{
+    display: flex;
+    flex-direction: column;
+
+}
+#items-container{
+    display: flex;
+    margin: 2rem;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    background-color: #DDD8E8;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.items-description{
+    text-align: center;
+    padding: 0.25rem;
+    margin: 1rem 0.5rem;
+}
+
+/* FORM SECTION */
+#form{
+    display: flex;
+}
+label{
+    font-size: 1em;
+    padding: 0.5rem;
+    flex: 1 1 60%;
+}
+input{
+    margin: 0rem 1rem;
+    font-size: 1em;
+    color: #2C2873;
+}
+#email{
+    border: none;
+    background-color: #B3DCFC;
+    border-radius: 0.25rem;
+    max-width: fit-content;
+    padding: 0.5rem 5rem 0.5rem 2rem;
+    flex: 1 1 20%;
+}
+#submit{
+    border: none;
+    background-color: #B3DCFC;
+    border-radius: 0.25rem;
+    max-width: fit-content;
+    padding: 0.5rem 2rem;
+    flex: 1 1 20%;
+}
+#submit:hover{
+    background-color: #97A9D0;
+}
+#submit:active{
+    background-color: #5E7AB6;
+
+}
+
+/* IMAGES */
+img{
+    width: 100%;
+}
+#header img{
+    width: 10rem;
+    height: 10rem;
+}
+#products img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 2rem;
+}
+@media screen and (max-width:700px) {
+    #header{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+    }
+    #about-us{
+        flex-direction: column;
+    }
+    #about-us p{
+        text-align: justify;
+
+    }
+    .section{
+        padding: 0.5rem;
+    }
+    #items-container{
+        flex-direction: column;
+        margin: 1rem;
+    }
+    #form{
+        flex-direction: column;
+    }
+    #form>*{
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Landing  Page</title>
+</head>
+<body>
+    <header id="header">
+        <h1>My Company</h1>
+        <div class="logo">
+            <img src="./img/Iron_Man_Vol_6_logo.webp" alt="Company's Logo" id="header-img">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#about-us" class="nav-link">About Us</a></li>
+                <li><a href="#products" class="nav-link">Our Products</a></li>
+                <li><a href="#form-section" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section"> 
+            <p class="sub-title">About Us</p>
+            <div id="about-us">
+                <p class="text">We are a compny selling blabla. We want to make the wolrd a better space and fly on unicorn. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi iusto nihil obcaecati magnam vitae quas assumenda consequatur quaerat esse nam, eveniet, debitis fuga itaque mollitia, dicta sit tempore excepturi consectetur?</p>
+                <div id="about-us-video">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/bOgjkO7keBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div> 
+        </div> 
+        <div class="section">
+            <p class="sub-title">Our Products</p>
+            <div id="products">
+                <p class="text">Below are three of our best selling products, to see the full catalogue you need to give us your email. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptatum itaque dolorum nostrum delectus dolore ipsa corporis incidunt, alias obcaecati exercitationem eius omnis, nobis quidem? Minus illum aliquid exercitationem natus?</p>
+                <div id="items-container">
+                    <div class="items">
+                        <img src="./img/shopping.jpeg" alt="first image of the helmet" class="items-img">
+                        <p class="items-description">Premium finish and detailing</p>
+                    </div>
+                    <div class="items">
+                        <img src="./img/shopping-2.jpeg" alt="second image of the helmet" class="items-img">
+                        <p class="items-description">2 LED light up eyes</p>
+                        <p class="items-description">Electronic sound effects</p>
+                    </div>
+                    <div class="items">
+                        <img src="./img/shopping-3.jpeg" alt="third image of the helmet" class="items-img">
+                        <p class="items-description">Detachable magnetized faceplate</p>
+                        <p class="items-description">Product contains magnets</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="section">
+            <p class="sub-title">Contact Us</p>
+            <div id="form-section">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <label for="email">Share with us your email an we will send you ? </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
